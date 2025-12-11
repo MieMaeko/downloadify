@@ -11,12 +11,12 @@ export const Form = () => {
     const [selectedDuration, setSelectDuration] = useState<Duration>({ type: 'full' });
     const [typedUrl, setUrl] = useState(Url)
     const sendDonwload = () => {
-        const requestData = {
-            platform: selectedPlatform,
-            format: selectedFormat,
-            quality: selectedQuality,
-            duration: selectedDuration
-        }
+        // const requestData = {
+        //     platform: selectedPlatform,
+        //     format: selectedFormat,
+        //     quality: selectedQuality,
+        //     duration: selectedDuration
+        // }
     };
 
     const handleDurationChange = (selectedType: 'full' | 'range') => {
@@ -63,7 +63,7 @@ export const Form = () => {
             <div className='topic'>
                 <label htmlFor="">Paste url</label>
                 <br />
-                <input type="text" placeholder='place url'
+                <input type="text" placeholder='place url' value={typedUrl}
                     onChange={(e) => setUrl(e.target.value)} />
             </div>
             <div className='topic'>
