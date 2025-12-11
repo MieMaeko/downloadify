@@ -1,0 +1,16 @@
+$primary-color: #3498db;  // голубой
+$secondary-color: #e74c3c;  // красный
+$tertiary-color: #2ecc71;  // зеленый
+$font-color: #333;  
+span, input {
+    color: white;
+}
+body {
+
+    height: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(135deg, rgb(6, 7, 32), rgb(59, 3, 102) 51%, rgb(6, 7, 32));
+    background: -moz-linear-gradient(135deg, rgb(6, 7, 32), #3b0366 51%, rgb(6, 7, 32));
+    background: linear-gradient(135deg, rgb(6, 7, 32), rgb(59, 3, 102) 51%, rgb(6, 7, 32));
+}
