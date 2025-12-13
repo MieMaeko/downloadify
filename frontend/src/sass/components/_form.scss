@@ -1,3 +1,9 @@
+@use '../base/base' as *;
+
+input {
+    font-size: large;
+    font-family: Octos;
+}
 
 form {
     width: 60%;
@@ -13,24 +19,25 @@ form {
     }
 
     .topic {
-        input {
+        .inpUrl {
             background-color: #1D293D;
             border: 2px solid #29334E;
             border-radius: 10px;
             padding: 2%;
             width: 100%;
             margin-top: 1%;
-            font-size: large;
-            font-family: Octos;
+
             transition: border 0.3s ease, box-shadow 0.3s ease;
+
+            &:focus {
+                border: 2px solid #0084a1;
+                ;
+                box-shadow: 0 0 5px 2px rgba(0, 191, 255, 0.6);
+                outline: none;
+            }
         }
 
-        input:focus {
-            border: 2px solid #0084a1;
-            ;
-            box-shadow: 0 0 5px 2px rgba(0, 191, 255, 0.6);
-            outline: none;
-        }
+
 
         margin-bottom: 5%;
 
@@ -42,6 +49,30 @@ form {
             align-items: center;
         }
 
+        .durations {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 4%;
+            background-color: $backBox-color;
+            border-radius: 20px;
+            border: 2px solid $borderBox-color;
+            height: 80px;
+
+            div {
+                align-items: center;
+                display: flex;
+                gap: 2%;
+
+                input {
+                    background-color: #121225;
+                    ;
+                    border: 2px solid #252a38;
+                    border-radius: 10px;
+                    padding: 5%;
+                }
+            }
+        }
 
     }
 
@@ -58,12 +89,14 @@ form {
         gap: 5px;
         justify-content: center;
         align-items: center;
+
         img {
             width: 40px;
             height: auto;
         }
+
         span {
-             font-size:xx-large;
+            font-size: xx-large;
             font-family: Octos;
         }
     }

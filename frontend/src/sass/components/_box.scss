@@ -1,3 +1,4 @@
+@use '../base/base' as *;
 .box {
     flex: 1 1 30%;
     min-width: 150px;
@@ -7,9 +8,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #1C1D3C;
+    background-color: $backBox-color;
     align-items: center;
-    border: 2px solid #29334E;
+    border: 2px solid $borderBox-color;
     border-radius: 20px;
     cursor: pointer;
 
@@ -35,8 +36,8 @@
     // -moz-animation: glowing 1s ease-in-out infinite alternate;
     animation: glowing 4s ease-in-out infinite alternate;
     // box-shadow: 0 0 5px 2px rgba(0, 191, 255, 0.6);
-    // border: 2px solid #0084a1;
-    // transform: scale(1.1);
+    border: 2px solid #0084a1;
+    transform: scale(1.1);
 }
 
 @-webkit-keyframes glowing {

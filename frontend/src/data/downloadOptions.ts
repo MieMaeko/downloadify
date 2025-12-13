@@ -2,19 +2,19 @@
 export const Platforms: IPlatform[] = [
     {
         label: 'youtube',
-       img: '../public/images/Youtube.svg'
+       img: '../images/Youtube.svg'
     },
     {
         label: 'pinterest',
-        img: '../public/images/Pinterest.svg'
+        img: '../images/Pinterest.svg'
     },
     {
         label: 'tiktok',
-        img: '../public/images/Tiktok.svg'
+        img: '../images/Tiktok.svg'
     },
     {
         label: 'twitch',
-        img: '../public/images/Twitch.svg'
+        img: '../images/Twitch.svg'
     }
 ]
 export let Url: string;
